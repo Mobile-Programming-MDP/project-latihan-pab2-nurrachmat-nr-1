@@ -67,4 +67,5 @@ class DefaultFirebaseOptions {
     databaseURL: 'https://fasum-j-default-rtdb.firebaseio.com',
     storageBucket: 'fasum-j.firebasestorage.app',
   );
+
 }
