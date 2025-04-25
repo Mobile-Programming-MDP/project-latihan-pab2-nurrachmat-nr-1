@@ -55,6 +55,9 @@ class HomeScreen extends StatelessWidget {
             return const Center(child: CircularProgressIndicator());
 
           final posts = snapshot.data!.docs;
+
+          //Script lengkap bagian ListView.builder
+          //https://pastebin.com/kSXM5mTX
           return ListView.builder(
             itemCount: posts.length,
             itemBuilder: (context, index) {
