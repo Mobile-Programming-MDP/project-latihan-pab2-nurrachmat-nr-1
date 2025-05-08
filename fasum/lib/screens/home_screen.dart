@@ -253,6 +253,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                       IconButton(
                                           onPressed: () {},
                                           icon: Icon(Icons.comment)),
+
+                                      //Menu Edit dan Hapus
                                       if (currentUser != null &&
                                           currentUser.uid == userId)
                                         IconButton(
@@ -272,6 +274,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     mainAxisSize:
                                                         MainAxisSize.min,
                                                     children: [
+                                                      //Menu Edit
                                                       ListTile(
                                                         leading: const Icon(
                                                             Icons.edit),
@@ -283,6 +286,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                           // Navigate to edit screen or implement edit functionality
                                                         },
                                                       ),
+                                                      //Menu Hapus
                                                       ListTile(
                                                         leading: const Icon(
                                                             Icons.delete),
