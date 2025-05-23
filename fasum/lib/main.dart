@@ -148,9 +148,8 @@ class _MyAppState extends State<MyApp> {
   }
 
   void setupFirebaseMessaging() async {
-    String? token = await FirebaseMessaging.instance.getToken(
-        vapidKey:
-            'BFXHx4wGcw-bAbCzBxOocajSKFn0bQobza1LCmw-ZjbIEW1JJRpbPywK92nV5AWoE8KORRYeTUiVgw8VS5FRkv4');
+    String? token = await FirebaseMessaging.instance.getToken();
+    //vapidKey: 'BFXHx4wGcw-bAbCzBxOocajSKFn0bQobza1LCmw-ZjbIEW1JJRpbPywK92nV5AWoE8KORRYeTUiVgw8VS5FRkv4'
     print("FCM Token: $token");
 
     FirebaseMessaging messaging = FirebaseMessaging.instance;
